@@ -1,6 +1,6 @@
-docker build -t mterrano1/multi-client:latest -t mterrano1/multi-client: $SHA -f ./client/Dockerfile ./client
-docker build -t mterrano1/multi-server:latest -t mterrano1/multi-server: $SHA -f ./server/Dockerfile ./server
-docker build -t mterrano1/multi-worker:latest -t mterrano1/multi-worker: $SHA -f ./worker/Dockerfile ./worker
+docker build -t mterrano1/multi-client:latest -t mterrano1/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t mterrano1/multi-server:latest -t mterrano1/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t mterrano1/multi-worker:latest -t mterrano1/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push mterrano1/multi-client:latest
 docker push mterrano1/multi-server:latest
 docker push mterrano1/multi-worker:latest
