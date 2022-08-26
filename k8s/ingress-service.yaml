@@ -20,7 +20,7 @@ spec:
             backend:
               service:
                 # UPDATE SERVICE FIELDS
-                name: client-cluster-ip-service
+                name: client-cluster-ip-serviceMy Project 29490
                 port:
                   number: 3000
           - path: /api/?(.*)
